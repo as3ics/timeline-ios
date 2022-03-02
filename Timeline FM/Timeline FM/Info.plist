@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APIKey</key>
+	<string>674db4c840a376b233407c913981fe1baa2af897</string>
+	<key>AWS</key>
+	<dict>
+		<key>CredentialsProvider</key>
+		<dict>
+			<key>CognitoIdentity</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>PoolId</key>
+					<string>AKIAJ7V7L2BDEZD3XD6Q</string>
+					<key>Region</key>
+					<string>USEast1</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>S3</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>Region</key>
+				<string>USEast1</string>
+			</dict>
+		</dict>
+		<key>S3TransferManager</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>Region</key>
+				<string>USEast1</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Backend Url</key>
+	<string>$(BACKEND_URL)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Timeline</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Consumer Key</key>
+	<string>$(CONSUMER_KEY)</string>
+	<key>Consumer Secret</key>
+	<string>$(CONSUMER_SECRET)</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>fd735dc87abb1f4441bc5b837e1c3d05ddcb208a</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>LSApplicationCategoryType</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiemRlZ2VvcmciLCJhIjoiY2pqY2Y4eXBzMHA4ODN2bzV3MGdqZTI2MyJ9.vg4dymGpPKlfNNrHy8lyOQ</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.timelinefm.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+			<key>dev-api.timelinefm.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Timeline allows you to send video messages</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Timeline allows you to take photos and upload them to your account in Timeline</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Timeline uses biometric authentication to protect your information</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Timeline uses location data to automate timesheets</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Timeline uses location data to automate timesheets</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Timeline allows you to take videos with sound and upload them to your account in Timeline</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Timeline uses your motion data to help determine if you are driving and reduce GPS power to save battery</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Timeline allows you to export photos from the application to your library</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Timeline allows you to import photos from your library and upload them to your account in Timeline</string>
+	<key>UIApplicationShortcutItems</key>
+	<array/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

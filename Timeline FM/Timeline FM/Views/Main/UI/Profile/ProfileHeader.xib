@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothic Bold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="279" id="TGq-44-aUJ" customClass="ProfileHeader" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TGq-44-aUJ" id="iC1-Uc-YKo">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="274.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNJ-a7-d4n" userLabel="Middle">
+                        <rect key="frame" x="190.5" y="137" width="1" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="Vgp-qt-59i"/>
+                            <constraint firstAttribute="height" constant="1" id="wxh-7l-9SF"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alex Riley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfM-yj-aVG">
+                        <rect key="frame" x="135.5" y="106" width="111" height="20"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MeritHall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBi-kF-mwF">
+                        <rect key="frame" x="145.5" y="127" width="91.5" height="17"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="16"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Luz-Ol-OIz">
+                        <rect key="frame" x="151" y="16" width="80" height="80"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.69999999999999996"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="c8k-dl-Mso">
+                        <rect key="frame" x="146" y="11" width="90" height="90"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="AJa-Yv-fIT"/>
+                            <constraint firstAttribute="width" constant="90" id="I4B-jm-hkY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="45"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-circle" translatesAutoresizingMaskIntoConstraints="NO" id="zcm-Up-gun">
+                        <rect key="frame" x="213" y="74.5" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7Zj-jL-P3p"/>
+                            <constraint firstAttribute="width" constant="20" id="PEJ-hJ-ZF3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shifts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-xr-8ft">
+                        <rect key="frame" x="55.5" y="231" width="55" height="16"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ym-9r-1g4">
+                        <rect key="frame" x="128.5" y="252" width="125.5" height="12.5"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="12"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji1-Lg-ACl">
+                        <rect key="frame" x="267.5" y="210" width="63" height="21"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12j-UC-fe9">
+                        <rect key="frame" x="164" y="231" width="54" height="16"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4w-xL-A5P">
+                        <rect key="frame" x="51.5" y="210" width="63" height="21"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVl-WZ-Xjr">
+                        <rect key="frame" x="159.5" y="210" width="63" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="huy-Cz-1yx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcJ-fZ-dEF">
+                        <rect key="frame" x="262" y="231" width="74" height="16"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H3-VO-9Sw" customClass="FlatButton" customModule="Material">
+                        <rect key="frame" x="135.5" y="167" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4Rs-TV-oOP"/>
+                            <constraint firstAttribute="height" constant="40" id="Wfz-PH-bK7"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwk-By-qwD" customClass="FlatButton" customModule="Material">
+                        <rect key="frame" x="200.5" y="167" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Xie-Bu-tgw"/>
+                            <constraint firstAttribute="height" constant="40" id="pHs-IO-o7E"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szH-ul-4ml" userLabel="Favorite Button" customClass="FlatButton" customModule="Material">
+                        <rect key="frame" x="265.5" y="167" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Xrb-QB-HG3"/>
+                            <constraint firstAttribute="width" constant="40" id="ffR-3C-Mpu"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYD-kN-2P0" userLabel="Timeline Message Button" customClass="FlatButton" customModule="Material">
+                        <rect key="frame" x="70.5" y="167" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DHC-DE-Jcx"/>
+                            <constraint firstAttribute="width" constant="40" id="LDh-FT-WEf"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68e-11-66c">
+                        <rect key="frame" x="165.5" y="145" width="51.5" height="17"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DfM-yj-aVG" firstAttribute="top" secondItem="c8k-dl-Mso" secondAttribute="bottom" constant="5" id="03R-KP-b8k"/>
+                    <constraint firstItem="v4w-xL-A5P" firstAttribute="centerY" secondItem="wVl-WZ-Xjr" secondAttribute="centerY" id="07B-ld-Fvi"/>
+                    <constraint firstItem="hvU-xr-8ft" firstAttribute="centerY" secondItem="12j-UC-fe9" secondAttribute="centerY" id="329-D4-0Jp"/>
+                    <constraint firstItem="DfM-yj-aVG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iC1-Uc-YKo" secondAttribute="leading" constant="30" id="3iX-bg-9aw"/>
+                    <constraint firstItem="68e-11-66c" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="4L5-U3-Auu"/>
+                    <constraint firstItem="Luz-Ol-OIz" firstAttribute="height" secondItem="c8k-dl-Mso" secondAttribute="height" constant="-10" id="4jw-6r-5Af"/>
+                    <constraint firstItem="68e-11-66c" firstAttribute="top" secondItem="LBi-kF-mwF" secondAttribute="bottom" constant="1" id="5Lb-au-xCT"/>
+                    <constraint firstItem="iNJ-a7-d4n" firstAttribute="leading" secondItem="5H3-VO-9Sw" secondAttribute="trailing" constant="15" id="8Wr-Wu-jDY"/>
+                    <constraint firstItem="iNJ-a7-d4n" firstAttribute="centerY" secondItem="iC1-Uc-YKo" secondAttribute="centerY" id="AKr-Zw-FaZ"/>
+                    <constraint firstItem="hvU-xr-8ft" firstAttribute="centerX" secondItem="v4w-xL-A5P" secondAttribute="centerX" id="Axb-Kr-yfb"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DfM-yj-aVG" secondAttribute="trailing" constant="30" id="DBf-RJ-dit"/>
+                    <constraint firstAttribute="bottom" secondItem="5ym-9r-1g4" secondAttribute="bottom" constant="10" id="DL7-Sc-db2"/>
+                    <constraint firstItem="szH-ul-4ml" firstAttribute="centerY" secondItem="nwk-By-qwD" secondAttribute="centerY" id="EAl-hp-Iup"/>
+                    <constraint firstItem="12j-UC-fe9" firstAttribute="centerX" secondItem="wVl-WZ-Xjr" secondAttribute="centerX" id="EIr-r8-Ze1"/>
+                    <constraint firstItem="wVl-WZ-Xjr" firstAttribute="leading" secondItem="v4w-xL-A5P" secondAttribute="trailing" constant="45" id="Ica-Mu-Ael"/>
+                    <constraint firstItem="12j-UC-fe9" firstAttribute="top" secondItem="wVl-WZ-Xjr" secondAttribute="bottom" id="QAp-iv-tWc"/>
+                    <constraint firstItem="5ym-9r-1g4" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="QGI-k0-Zvv"/>
+                    <constraint firstItem="Luz-Ol-OIz" firstAttribute="centerY" secondItem="c8k-dl-Mso" secondAttribute="centerY" id="R8h-XB-kLi"/>
+                    <constraint firstItem="c8k-dl-Mso" firstAttribute="top" secondItem="iC1-Uc-YKo" secondAttribute="top" constant="11" id="TRS-lb-XuR"/>
+                    <constraint firstItem="5ym-9r-1g4" firstAttribute="top" secondItem="12j-UC-fe9" secondAttribute="bottom" constant="5" id="Vi5-qJ-uJn"/>
+                    <constraint firstItem="zcJ-fZ-dEF" firstAttribute="centerY" secondItem="12j-UC-fe9" secondAttribute="centerY" id="Vlz-dP-rOw"/>
+                    <constraint firstItem="nwk-By-qwD" firstAttribute="leading" secondItem="5H3-VO-9Sw" secondAttribute="trailing" constant="25" id="XY2-lr-ZYE"/>
+                    <constraint firstItem="zcJ-fZ-dEF" firstAttribute="centerX" secondItem="Ji1-Lg-ACl" secondAttribute="centerX" id="aLb-Ag-ZGO"/>
+                    <constraint firstItem="c8k-dl-Mso" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="dbc-ds-dgd"/>
+                    <constraint firstItem="zcm-Up-gun" firstAttribute="trailing" secondItem="c8k-dl-Mso" secondAttribute="trailing" constant="-3" id="ddR-qe-nAt"/>
+                    <constraint firstItem="DfM-yj-aVG" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="e24-NQ-SS7"/>
+                    <constraint firstItem="5H3-VO-9Sw" firstAttribute="top" secondItem="c8k-dl-Mso" secondAttribute="bottom" constant="66" id="fc9-sL-npa"/>
+                    <constraint firstItem="v4w-xL-A5P" firstAttribute="width" secondItem="wVl-WZ-Xjr" secondAttribute="width" id="h51-px-OLT"/>
+                    <constraint firstItem="nwk-By-qwD" firstAttribute="centerY" secondItem="5H3-VO-9Sw" secondAttribute="centerY" id="iux-lP-AEs"/>
+                    <constraint firstItem="LBi-kF-mwF" firstAttribute="centerX" secondItem="DfM-yj-aVG" secondAttribute="centerX" id="jBe-KY-8lE"/>
+                    <constraint firstItem="Luz-Ol-OIz" firstAttribute="centerX" secondItem="c8k-dl-Mso" secondAttribute="centerX" id="jaA-jz-Our"/>
+                    <constraint firstItem="iNJ-a7-d4n" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="k2x-5v-jgN"/>
+                    <constraint firstItem="Ji1-Lg-ACl" firstAttribute="centerY" secondItem="wVl-WZ-Xjr" secondAttribute="centerY" id="mTG-kO-7O5"/>
+                    <constraint firstItem="Ji1-Lg-ACl" firstAttribute="leading" secondItem="wVl-WZ-Xjr" secondAttribute="trailing" constant="45" id="nhK-yL-F3g"/>
+                    <constraint firstItem="szH-ul-4ml" firstAttribute="leading" secondItem="nwk-By-qwD" secondAttribute="trailing" constant="25" id="oLd-Ru-SJf"/>
+                    <constraint firstItem="LBi-kF-mwF" firstAttribute="top" secondItem="DfM-yj-aVG" secondAttribute="bottom" constant="1" id="q5k-LP-CUX"/>
+                    <constraint firstItem="wVl-WZ-Xjr" firstAttribute="width" secondItem="Ji1-Lg-ACl" secondAttribute="width" id="ttJ-qh-nt0"/>
+                    <constraint firstItem="zcm-Up-gun" firstAttribute="bottom" secondItem="c8k-dl-Mso" secondAttribute="bottom" constant="-6.5" id="uBF-hM-SBN"/>
+                    <constraint firstItem="Luz-Ol-OIz" firstAttribute="width" secondItem="c8k-dl-Mso" secondAttribute="width" constant="-10" id="ufO-Un-k6g"/>
+                    <constraint firstItem="12j-UC-fe9" firstAttribute="centerX" secondItem="iC1-Uc-YKo" secondAttribute="centerX" id="vBQ-ND-Kd2"/>
+                    <constraint firstItem="5H3-VO-9Sw" firstAttribute="leading" secondItem="pYD-kN-2P0" secondAttribute="trailing" constant="25" id="wz2-fG-IMv"/>
+                    <constraint firstItem="pYD-kN-2P0" firstAttribute="centerY" secondItem="5H3-VO-9Sw" secondAttribute="centerY" id="yeP-6P-Dbg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Jnm-nO-ads"/>
+            <connections>
+                <outlet property="callButton" destination="nwk-By-qwD" id="kEa-j8-rRw"/>
+                <outlet property="cameraButton" destination="zcm-Up-gun" id="FSE-Xd-Yc9"/>
+                <outlet property="company" destination="LBi-kF-mwF" id="Pbw-Ug-Dym"/>
+                <outlet property="distanceAnchor" destination="zcJ-fZ-dEF" id="g76-w7-LKW"/>
+                <outlet property="distanceLabel" destination="Ji1-Lg-ACl" id="Bfg-6M-IxP"/>
+                <outlet property="favoriteButton" destination="szH-ul-4ml" id="hbd-Cd-tvb"/>
+                <outlet property="hoursAnchor" destination="12j-UC-fe9" id="AjV-G9-bDi"/>
+                <outlet property="hoursLabel" destination="wVl-WZ-Xjr" id="q9h-Qz-6at"/>
+                <outlet property="messageButton" destination="5H3-VO-9Sw" id="0Pf-8g-Add"/>
+                <outlet property="name" destination="DfM-yj-aVG" id="Z2s-p1-yoC"/>
+                <outlet property="profilePicture" destination="c8k-dl-Mso" id="zXV-Z0-JST"/>
+                <outlet property="role" destination="68e-11-66c" id="IVl-XJ-xi6"/>
+                <outlet property="shiftsAnchor" destination="hvU-xr-8ft" id="jmG-XB-MbU"/>
+                <outlet property="shiftsLabel" destination="v4w-xL-A5P" id="tjX-z0-EEa"/>
+                <outlet property="timelineMessageButton" destination="pYD-kN-2P0" id="9eb-eF-Mwq"/>
+            </connections>
+            <point key="canvasLocation" x="-126.40000000000001" y="-5.8470764617691158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="50" height="50"/>
+        <image name="camera-circle" width="25" height="25"/>
+    </resources>
+</document>

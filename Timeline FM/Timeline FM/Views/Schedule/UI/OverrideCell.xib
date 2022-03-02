@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothic Bold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OverrideCell" customModule="Timesheets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMI-hH-rCm">
+                        <rect key="frame" x="8" y="13.5" width="25" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="pbY-Cp-5yu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multi Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ar8-4V-ht4">
+                        <rect key="frame" x="253" y="6.5" width="60" height="11"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCY-Ce-25u">
+                        <rect key="frame" x="41" y="3" width="40" height="16"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Not Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jha-yF-tOJ">
+                        <rect key="frame" x="41" y="25.5" width="76.5" height="10.5"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="10"/>
+                        <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End: Jan 10, 2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYA-Af-zet">
+                        <rect key="frame" x="206.5" y="25.5" width="106.5" height="10.5"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="10"/>
+                        <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nMI-hH-rCm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0wg-OK-boC"/>
+                    <constraint firstItem="XYA-Af-zet" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="9" id="79C-t1-sna"/>
+                    <constraint firstItem="LCY-Ce-25u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="41" id="9a0-Oj-PK4"/>
+                    <constraint firstItem="jha-yF-tOJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="41" id="Du3-MT-gCY"/>
+                    <constraint firstAttribute="trailing" secondItem="XYA-Af-zet" secondAttribute="trailing" constant="7" id="HHp-FG-w39"/>
+                    <constraint firstAttribute="trailing" secondItem="Ar8-4V-ht4" secondAttribute="trailing" constant="7" id="MON-qJ-rUI"/>
+                    <constraint firstItem="nMI-hH-rCm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Uoc-gp-X5q"/>
+                    <constraint firstItem="LCY-Ce-25u" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10.75" id="azz-UO-9WG"/>
+                    <constraint firstItem="Ar8-4V-ht4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-9.75" id="byd-BP-JeY"/>
+                    <constraint firstItem="Ar8-4V-ht4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LCY-Ce-25u" secondAttribute="trailing" constant="10" id="m5q-hA-fuN"/>
+                    <constraint firstItem="jha-yF-tOJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="9" id="qFW-b7-CFc"/>
+                    <constraint firstItem="XYA-Af-zet" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jha-yF-tOJ" secondAttribute="trailing" constant="10" id="xMd-pW-6wK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lowerDateLabel" destination="XYA-Af-zet" id="1bw-Xm-mY1"/>
+                <outlet property="numberLabel" destination="nMI-hH-rCm" id="qul-jU-upp"/>
+                <outlet property="titleLabel" destination="LCY-Ce-25u" id="HWY-Z5-0ZA"/>
+                <outlet property="typeLabel" destination="jha-yF-tOJ" id="KHh-kB-kt0"/>
+                <outlet property="upperDateLabel" destination="Ar8-4V-ht4" id="PoD-up-aYL"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>

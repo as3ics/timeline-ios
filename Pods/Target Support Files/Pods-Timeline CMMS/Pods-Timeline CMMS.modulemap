@@ -1,0 +1,6 @@
+framework module Pods_Timeline_CMMS {
+  umbrella header "Pods-Timeline CMMS-umbrella.h"
+
+  export *
+  module * { export * }
+}

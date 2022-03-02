@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppKeychainId</key>
+	<string>com.timelinefm.timelinefm-keychain</string>
+	<key>AppStoreId</key>
+	<string>1407012793</string>
+	<key>AppName</key>
+	<string>Timeline</string>
+	<key>AppPrivacyUrl</key>
+	<string>https://timelinefm.com/privacy-iOS</string>
+	<key>AppTermsUrl</key>
+	<string>https://timelinefm.com/terms-iOS</string>
+	<key>APIUrl</key>
+	<string>https://api.timelinefm.com</string>
+</dict>
+</plist>

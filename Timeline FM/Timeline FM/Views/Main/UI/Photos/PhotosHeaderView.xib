@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothic Bold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotosHeaderView" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3UO-nC-cJ2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Union at Dearborn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcE-hJ-dWh">
+                    <rect key="frame" x="8" y="12" width="161" height="16"/>
+                    <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zone 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtN-jF-aKQ">
+                    <rect key="frame" x="8" y="26" width="47" height="13"/>
+                    <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="12"/>
+                    <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WcE-hJ-dWh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7W7-3O-eYc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3UO-nC-cJ2" secondAttribute="trailing" id="9F9-ZV-3aC"/>
+                <constraint firstItem="VtN-jF-aKQ" firstAttribute="leading" secondItem="WcE-hJ-dWh" secondAttribute="leading" id="Cfk-9L-JaS"/>
+                <constraint firstItem="3UO-nC-cJ2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MA5-2Q-MVF"/>
+                <constraint firstItem="WcE-hJ-dWh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="N3x-Im-mgP"/>
+                <constraint firstItem="3UO-nC-cJ2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NxL-r9-fzv"/>
+                <constraint firstItem="VtN-jF-aKQ" firstAttribute="top" secondItem="WcE-hJ-dWh" secondAttribute="bottom" constant="-2" id="Qj4-WB-EnO"/>
+                <constraint firstAttribute="bottom" secondItem="3UO-nC-cJ2" secondAttribute="bottom" id="vj4-dt-Aqx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="subLabel" destination="VtN-jF-aKQ" id="yAs-K5-RkC"/>
+                <outlet property="titleCenterConstraint" destination="7W7-3O-eYc" id="wJ5-Gk-rku"/>
+                <outlet property="titleLabel" destination="WcE-hJ-dWh" id="Qf6-Fl-VNU"/>
+                <outlet property="view" destination="3UO-nC-cJ2" id="aIr-Od-7wY"/>
+            </connections>
+            <point key="canvasLocation" x="244" y="120"/>
+        </view>
+    </objects>
+</document>

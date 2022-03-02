@@ -1,0 +1,323 @@
+/* 
+  Localizable.strings
+  Timeline Software, LLC
+
+  Created by Timeline Software, LLC on 1/27/16.
+  Copyright © 2016 Timeline Software, LLC. All rights reserved.
+*/
+
+"sectionTitle_activeShift" = "Active Shift";
+"sectionTitle_pastShifts" = "Past Shifts";
+"sectionTitle_settings" = "Settings";
+"sectionTitle_loginConfirmation" = "Confirmation";
+"sectionTitle_entryDetails" = "Entry Details";
+
+
+"done" = "Done";
+"confirmationCode" = "Confirmation Code";
+"cancel" = "Cancel";
+"okay" = "Okay";
+"retryRequest" = "Retry Request";
+"crew" = "Crew";
+"activity" = "Activity";
+"unknown" = "Unknown";
+"confirmation" = "Confirmation";
+"submit" = "Submit";
+"yes" = "Yes";
+"no" = "No";
+"hour" = "Hour";
+"hours" = "Hours";
+
+"january" = "January";
+"february" = "February";
+"march" = "March";
+"april" = "April";
+"may" = "May";
+"june" = "June";
+"july" = "July";
+"august" = "August";
+"september" = "September";
+"october" = "October";
+"november" = "November";
+"december" = "December";
+"error" = "Error";
+
+"login_wrongPerson" = "I'm not %@ %@.";
+"login_privacyPolicyText" = "By signing in you agree to our terms and privacy policy";
+
+
+"settings_userInfoCompany" = "Company";
+"settings_userInfoFirstName" = "First Name";
+"settings_userInfoLastName" = "Last Name";
+"settings_userInfoRole" = "Role";
+"settings_userInfoRoleUser" = "User";
+"settings_userInfoRoleLeader" = "Crew Leader";
+
+
+"settings_LocationPermissions" = "Location Permissions Status";
+"settings_LocationPermissionsAuthorized" = "Authorized";
+"settings_LocationPermissionsDenied" = "Denied";
+
+
+"activeShifts_noTimeSheetMessage" = "You haven't started a timesheet yet.";
+"activeShifts_noTimeSheetButton" = "Start Timesheet";
+"activeShifts_noActivityMessage" = "You haven’t logged any activities yet.";
+"activeShifts_noActivityButton" = "Add a new activity";
+"activeShifts_logActivityTitle" = "Log Activity";
+"activeShifts_logActivity_start" = "Start";
+"activeShifts_logActivity_end" = "End";
+"activeShifts_logActivity_location" = "Location";
+"activeShifts_logActivity_addCrewMember" = "Add Crew Member";
+"activeShifts_logActivity_crewMembers" = "Crew Members";
+"activeShifts_errorRetrievingSheet" = "There was an error retrieving your time sheet.";
+"activeShifts_chooseActivity" = "Choose Activity...";
+"activeShifts_chooseLocation" = "Choose Location...";
+"activeShifts_createNewLocation" = "Create New Location";
+"activeShifts_chooseLocationTitle" = "Choose Location";
+"activeShifts_createLocationTitle" = "Create Location";
+"activeShifts_createLocation_ErrorUnknown" = "There was an unkown error creating a new location. Please try again later.";
+"activeShifts_createLocation_ErrorTooFar" = "The address you entered is too far from your actual location. Please use an address that is closer.";
+"activeShifts_crewLeaderInfoMsg" = "Your role must be designated as a crew leader in order to enter time for other people.";
+"activeShifts_submissionConfirmationMsg" = "Please review your time sheet before submitting it. Are you sure you want to submit this time sheet?";
+"activeShifts_relatedEntriesWarning" = "Warning: Related Entries";
+"activeShifts_relatedEntriesMsg" = "This time entry was logged with at least one other time entry. Would you like to update the other time entries as well? If you choose no, these time entries will become unrelated.";
+"activeShifts_relatedEntries" = "Related Entries";
+"activeShifts_LocationServicesTitle" = "Location Services Disabled";
+"activeShifts_LocationServicesMsg" = "To re-enable, please go to Settings and turn on Location Service for this app.";
+
+"pastShifts_monthPickerTitle" = "Choose Month";
+"pastShifts_noTimeSheetMessage" = "You haven't submitted any time sheets for %@ %@.";
+"pastShifts_pendingShifts" = "Pending Shifts";
+"pastShifts_timeSheetNoActivityMessage" = "You haven't logged any activity to this time sheet.";
+"pastShifts_timeSheetNoActivityAction" = "Delete this time sheet";
+
+
+
+
+
+"Onboarding_FirstPage_Title" = "Welcome to Timeline";
+"Onboarding_FirstPage_Body" = "Timeline is a Facilities Management platform designed with simplicity in mind.";
+"Onboarding_SecondPage_Title" = "Location Aware";
+"Onboarding_SecondPage_Body" = "Timeline uses your location and movements to generate detailed activity logs automatically.";
+"Onboarding_ThirdPage_Title" = "Live Reports";
+"Onboarding_ThirdPage_Body" = "Generate live data analytics to make real-time informed decisions.";
+"Onboarding_FourthPage_Title" = "Get Started!";
+"Onboarding_FourthPage_Body" = "Create a new business account to see how Timeline can improve your Facilities Management.";
+"Onboarding_FourthPage_Button" = "Finish";
+
+"LocationUpdate_CheckAuthorizationStatus_Title" = "Timeline Error!";
+"LocationUpdate_CheckAuthorizationStatus_Message" = "GPS access is currently restricted. In order to use tracking, please enable GPS for Timeline in the Settings App.";
+"LocationUpdate_CheckAuthorizationStatus_ActionTitle" = "Go to Settings now";
+"LocationUpdate_NewEntryAlert_Title" = "Timeline";
+"LocationUpdate_TravelingEntryAlert_Title" = "Timeline";
+"LocationUpdate_NewEntryAlert_Body" = "You have entered a known location. Timeline has switched you to this location.";
+"LocationUpdate_TravelingEntryAlert_Body" = "Timeline has switched you to traveling mode.";
+
+"TimelineViewController_EmptySheetHeaderText" = "Create new timesheet to get started";
+"TimelineViewController_DebounceHeaderLogIntoLocation" = "You will be logged into %@ in %.0f seconds";
+"TimelineViewController_DebounceHeaderTravelingMode" = "You will be put into Traveling mode in %.0f seconds";
+"TimelineViewController_DebounceHeaderLogoutLocation" = "You have left your location. You will be logged out in %.0f seconds";
+"TimelineViewController_HeaderNoTimeEntries" = "You do not have any time entries";
+"TimelineViewController_HeaderCurrentlyTraveling" = "You are currently Traveling";
+"TimelineViewController_HeaderOnBreak" = "You are currently on Break";
+"TimelineViewController_HeaderLoggedIn" = "You are currently clocked in at %@";
+"TimelineViewController_DurationStringHour" = "%.0f hour %.0f mins %.0f secs";
+"TimelineViewController_DurationStringHours" = "%.0f hours %.0f mins %.0f secs";
+"TimelineViewController_SelectTimesheetEndTime" = "Select End Time:";
+"TimelineViewController_DeleteAction" = "Delete";
+"TimelineViewController_FAB_CreateTimesheet" = "Create Timesheet";
+"TimelineViewController_FAB_AddEntry" = "Add Entry";
+"TimelineViewController_FAB_QuickAddEntry" = "Quick Add Entry";
+"TimelineViewController_FAB_StartBreak" = "Start Break";
+"TimelineViewController_FAB_SubmitTimesheet" = "Submit Timesheet";
+"TimelineViewController_FAB_EndBreak" = "End Break";
+"TimelineViewController_HeaderNoLocation" = "Waiting for accurate location...";
+"TimelineViewController_Processing" = "Processing...";
+
+"SidebarViewController_Timeline" = "Timeline";
+"SidebarViewController_Locations" = "Locations";
+"SidebarViewController_Activities" = "Activities";
+"SidebarViewController_History" = "History";
+"SidebarViewController_Chat" = "Chat";
+"SidebarViewController_Settings" = "Settings";
+"SidebarViewController_SignOut" = "Sign Out";
+"SidebarViewController_SignOutWarningTitle" = "Alert";
+"SidebarViewController_SignOutWarningMessage" = "Are you sure you want to sign out of your account?";
+"SidebarViewController_Cancel" = "Cancel";
+
+"SettingsViewController_OnboardingAlert_Title" = "Timeline";
+"SettingsViewController_OnboardingAlert_Message" = "The next time you start the app you will see the introduction slides. Cancel if you do not wish to proceed";
+"SettingsViewController_OnboardingAlert_Cancel" = "Cancel";
+"SettingsViewController_OnboardingAlert_Confirm" = "Confirm";
+"SettingsViewController_Profile" = "Profile";
+"SettingsViewController_ChooseLanguage" = "Language";
+"SettingsViewController_English" = "English";
+"SettingsViewController_PrivacyPolicy" = "Privacy Policy";
+"SettingsViewController_TermsAndConditions" = "Terms and Conditions";
+"SettingsViewController_BreadcrumbsMode" = "Breadcrumbs Mode";
+"SettingsViewController_BreadcrumbsDescription" = "Breadcrumbs Mode creates breadcrumbs while you are clocked in a Location";
+"SettingsViewController_ContactUs" = "Contact Us";
+"SettingsViewController_OrgIdDescription" = "Give this code to your co-workers when they are registering so that they can be assigned to your organization";
+"SettingsViewController_ResetIntroduction" = "Reset Introduction";
+"SettingsViewController_ResetIntroductionDescription" = "This will show the introduction slides the next time you restart the application";
+"SettingsViewController_ActionPicker_SelectLanguage" = "Select Language:";
+"SettingsViewController_ManageUsers" = "Manage Users";
+
+"ReviewTravelingTimeEntryViewController_Title" = "Traveling Entry";
+"ReviewTravelingTimeEntryViewController_Description" = "\nReview your traveling time entry.";
+"ReviewTravelingTimeEntryViewController_StartTime" = "Start Time:";
+"ReviewTravelingTimeEntryViewController_EndTime" = "End Time:";
+"ReviewTravelingTimeEntryViewController_TotalTime" = "End Time:";
+"ReviewTravelingTimeEntryViewController_Activity" = "Activity:";
+"ReviewTravelingTimeEntryViewController_Distance" = "Distance:";
+"ReviewTravelingTimeEntryViewController_Segment_TimeNonBillable" = "Time Non-Billable";
+"ReviewTravelingTimeEntryViewController_Segment_TimeBillable" = "Time Billable";
+"ReviewTravelingTimeEntryViewController_Segment_MilesBillable" = "Miles Billable";
+"ReviewTravelingTimeEntryViewController_Segment_MilesNonBillable" = "Miles Non-Billable";
+
+
+"ReviewTimeEntryViewController_Title" = "Time Entry";
+"ReviewTimeEntryViewController_ActionPicker_ChangeStartTime" = "Edit Start Time:";
+"ReviewTimeEntryViewController_ActionPicker_ChangeActivity" = "Edit Activity:";
+"ReviewTimeEntryViewController_Description" = "\nReview your time entry.\nYou can change your activity here.";
+"ReviewTimeEntryViewController_Location" = "Location:";
+"ReviewTimeEntryViewController_Address" = "Address:";
+"ReviewTimeEntryViewController_StartTime" = "Start Time:";
+"ReviewTimeEntryViewController_EndTime" = "End Time:";
+"ReviewTimeEntryViewController_TotalTime" = "Total Time:";
+"ReviewTimeEntryViewController_Activity" = "Activity:";
+"ReviewTimeEntryViewController_Delete" = "Delete";
+"ReviewTimeEntryViewController_Alert_Title" = "Warning";
+"ReviewTimeEntryViewController_Alert_Message" = "Are you sure you want to delete this time entry? This cannot be undone.";
+"ReviewTimeEntryViewController_Alert_Cancel" = "Cancel";
+"ReviewTimeEntryViewController_Alert_Confirm" = "Confirm";
+
+"ReviewPastTimeSheetViewController_HeaderLabel" = "Review your past time sheet";
+"ReviewPastTimeSheetViewController_DurationHour" = "%.0f hour %.0f mins";
+"ReviewPastTimeSheetViewController_DurationHours" = "%.0f hours %.0f mins";
+"ReviewPastTimeSheetViewController_Pending" = "Pending";
+"ReviewPastTimeSheetViewController_Approved" = "Approved";
+
+"ReviewLocationViewController_Title" = "Review Location";
+"ReviewLocationViewController_Name" = "Name:";
+"ReviewLocationViewController_NamePlaceholder" = "Location Name";
+"ReviewLocationViewController_Address" = "Address:";
+"ReviewLocationViewController_City" = "City:";
+"ReviewLocationViewController_UpdateBoundary" = "Update Boundary";
+"ReviewLocationViewController_NewLocation" = "New Location";
+
+"PickLocationViewController_LocationNotKnown" = "Current Location Not Known";
+
+"PickActivityViewContoller_Title" = "Pick Activity";
+"PickActivityViewController_Location" = "Selected Location:";
+"PickActivityViewController_Activities" = "Activities:";
+
+"NewEntryViewController_Title" = "Review New Time Entry";
+"NewEntryViewController_Confirm" = "Confirm";
+"NewEntryViewController_PickLocation" = "Pick Location";
+"NewEntryViewController_PickActivity" = "Pick Activity";
+"NewEntryViewController_StartTime" = "Start Time:";
+"NewEntryViewController_SelectedLocation" = "Selected Location:";
+"NewEntryViewController_SelectedActivity" = "Selected Activity:";
+
+"LoginViewController_Login" = "Login";
+"LoginViewController_PhoneNumber" = "Phone Number";
+"LoginViewController_NoConfirmationCode" = "Didn't receive a confirmation code?";
+"LoginViewController_Greeting" = "Hello, %@ %@.";
+"LoginViewController_PhoneLengthError" = "Please enter a valid 10-digit phone number.";
+"LoginViewController_ConfirmationCodeError" = "Confirmation code must consist of 6 digits.";
+
+"LocationsViewController_AddLocation" = "Add Location";
+
+"LocationSearchBarTableViewController_NewLocation" = "New Location";
+
+"LoadingViewController_LoadingUser" = "Loading User";
+"LoadingViewController_LoadingActivities" = "Loading Activities";
+"LoadingViewController_LoadingLocations" = "Loading Locations";
+"LoadingViewController_LoadingTimesheet" = "Loading Current Timesheet";
+"LoadingViewController_LoadingTimeEntries" = "Loading Current Time Entries";
+"LoadingViewController_Success" = "Success!";
+"LoadingViewController_ErrorTimesheet" = "Error Loading Timesheet!";
+"LoadingViewController_NoTimesheet" = "No Active Timesheet";
+"LoadingViewController_ErrorLocations" = "Error Loading Locations!";
+"LoadingViewController_ErrorActivities" = "Error Loading Activities!";
+"LoadingViewController_ErrorUser" = "Error Loading User!";
+"LoadingViewController_LoadingGlobalUsers" = "Loading Global Users";
+"LoadingViewController_ErrorLoadingUsers" = "Error Loading Global Users!";
+
+"HistoryViewController_Date" = "Date";
+
+"CreateLocationViewController_Title" = "Create Location";
+"CreateLocationViewController_SearchPlaceholder" = "Find location to auto populate";
+"CreateLocationViewController_NewLocation" = "New Location";
+"CreateLocationViewController_CurrentLocation" = "This address was determined using your current location.  Confirm the address and add a name to the location to continue.";
+"CreateLocationViewController_SearchedLocation" = "This is the address that you have searched for. Confirm the address and add a name to the location to continue.";
+"CreateLocationViewController_Name" = "Name:";
+"CreateLocationViewController_LocationNamePlaceholder" = "Location Name";
+"CreateLocationViewController_Address" = "Address:";
+"CreateLocationViewController_AddressPlaceholder" = "Address";
+"CreateLocationViewController_City" = "City:";
+"CreateLocationViewController_CityPlaceholder" = "City";
+"CreateLocationViewController_StatePlaceholder" = "State";
+"CreateLocationViewController_ZipPlaceholder" = "Zip";
+"CreateLocationViewController_PKHUD_Error" = "Please enter a name for the new location.";
+
+"CreateBusinessAccount_WelcomeUser" = "Welcome %@ %@.";
+"CreateBusinessAccount_Organization" = "%@";
+
+
+"CreateBoundaryForLocationViewController_Title" = "Create Boundary";
+"CreateBoundaryForLocationViewController_Description" = "Create a boundary for your location by using a circle or by creating a custom boundary";
+"CreateBoundaryForLocationViewController_ByRadius" = "Circle";
+"CreateBoundaryForLocationViewController_Custom" = "Custom";
+"CreateBoundaryForLocationViewController_CircleDetail" = "Adjust the slider to set the boundary size of your location. You can center the location by pressing the map";
+"CreateBoundaryForLocationViewController_CustomDetail" = "Press around your location to create a custom boundary for your location";
+"CreateBoundaryForLocationViewController_Boundary" = "Boundary";
+"CreateBoundaryForLocationViewController_RemovePoints" = "Remove All Points";
+"CreateBoundaryForLocationViewController_RemovePoint" = "Remove Last Point";
+"CreateBoundaryForLocationViewController_SelectOption" = "Select Option:";
+
+"CreateActivityViewController_EditTitle" = "Edit Activity";
+"CreateActivityViewController_PKHUD_Error" = "Please enter a name for the new activity";
+
+
+
+
+"CenterLocationViewController_Description" = "Center the Location using by choosing one of the following options";
+"CenterLocationViewController_Address" = "By Address";
+"CenterLocationViewController_Location" = "By Current Location";
+"CenterLocationViewController_Custom" = "Custom Location";
+"CenterLocationViewController_AddressDetail" = "The center of your location will be determined by the address you provided";
+"CenterLocationViewController_LocationDetail" = "The center of your location will be determined by your current location";
+"CenterLocationViewController_CustomDetail" = "Center your location by long pressing a point on the map";
+"CenterLocationViewController_NewLocationHeader" = "New Location: %@";
+"CenterLocationViewController_CenterLocation" = "Center Location";
+"CenterLocationViewController_Center" = "Center";
+"CenterLocationViewController_Latitude" = "Latitude:";
+"CenterLocationViewController_Longitude" = "Longitude:";
+"CenterLocationViewController_SelectOption" = "Select Option:";
+"CenterLocationViewController_NewLocation" = "New Location";
+
+"ActivitiesViewController_Notes" = "Add notes here";
+"ActivitiesViewController_AddActivity" = "Add Activity";
+
+"CreateActivityViewController_Name" = "Name:";
+"CreateActivityViewController_NamePlaceholder" = "New Activity Name";
+"CreateActivityViewController_Notes" = "Notes:";
+"CreateActivityViewController_NotesPlaceholder" = "Add notes here";
+
+
+"BasicInfoTripletCell_DurationHours" = "%@ hours %@ mins";
+"BasicInfoTripletCell_DurationHour" = "%@ hour %@ mins";
+
+"ManageUserCell_FullName" = "%@ %@";
+"ManageUserCell_Admin" = "Admin";
+"ManageUserCell_User" = "User";
+
+"ManageUsersViewController_DemoteUser" = "Demote User";
+"ManageUsersViewController_PromoteUser" = "Make Admin";
+"ManageUsersViewController_Cancel" = "Cancel";
+
+"TimesheetViewController_Title" = "";
+
+

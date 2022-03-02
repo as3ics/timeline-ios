@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="KGk-i7-Jjw" customClass="PhotosCell" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="161.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="61a-HQ-yTl">
+                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="161.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JeJ-p1-MIU">
+                        <rect key="frame" x="163.5" y="0.0" width="163" height="161.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="00S-kN-uKk">
+                        <rect key="frame" x="235" y="71" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i8c-0K-UYM">
+                        <rect key="frame" x="326.5" y="0.0" width="163.5" height="161.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fhI-LM-0BF">
+                        <rect key="frame" x="398.5" y="71" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V2E-Bb-3kd">
+                        <rect key="frame" x="71.5" y="71" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="61a-HQ-yTl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1U7-qJ-z1M"/>
+                    <constraint firstItem="JeJ-p1-MIU" firstAttribute="width" secondItem="i8c-0K-UYM" secondAttribute="width" id="4SK-L9-kED"/>
+                    <constraint firstItem="fhI-LM-0BF" firstAttribute="centerY" secondItem="i8c-0K-UYM" secondAttribute="centerY" id="7gS-IX-Bf6"/>
+                    <constraint firstItem="JeJ-p1-MIU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="G8S-ny-RUX"/>
+                    <constraint firstAttribute="trailing" secondItem="i8c-0K-UYM" secondAttribute="trailing" id="KzH-To-Nnz"/>
+                    <constraint firstAttribute="bottom" secondItem="i8c-0K-UYM" secondAttribute="bottom" id="LAF-Oz-R7s"/>
+                    <constraint firstItem="00S-kN-uKk" firstAttribute="centerX" secondItem="JeJ-p1-MIU" secondAttribute="centerX" id="P6z-LE-05w"/>
+                    <constraint firstItem="00S-kN-uKk" firstAttribute="centerY" secondItem="JeJ-p1-MIU" secondAttribute="centerY" id="PMj-3b-Dhs"/>
+                    <constraint firstItem="JeJ-p1-MIU" firstAttribute="leading" secondItem="61a-HQ-yTl" secondAttribute="trailing" id="Pig-PN-9EW"/>
+                    <constraint firstItem="JeJ-p1-MIU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Qla-C0-Fgr"/>
+                    <constraint firstItem="V2E-Bb-3kd" firstAttribute="centerY" secondItem="61a-HQ-yTl" secondAttribute="centerY" id="Si9-cu-F26"/>
+                    <constraint firstAttribute="bottom" secondItem="JeJ-p1-MIU" secondAttribute="bottom" id="WlO-0y-zHe"/>
+                    <constraint firstItem="fhI-LM-0BF" firstAttribute="centerX" secondItem="i8c-0K-UYM" secondAttribute="centerX" id="YLy-T1-7eh"/>
+                    <constraint firstItem="V2E-Bb-3kd" firstAttribute="centerX" secondItem="61a-HQ-yTl" secondAttribute="centerX" id="hVX-MD-gY9"/>
+                    <constraint firstItem="61a-HQ-yTl" firstAttribute="width" secondItem="JeJ-p1-MIU" secondAttribute="width" id="kmn-m1-RKx"/>
+                    <constraint firstItem="61a-HQ-yTl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="luo-kW-DbN"/>
+                    <constraint firstAttribute="bottom" secondItem="61a-HQ-yTl" secondAttribute="bottom" id="nqM-fZ-Uci"/>
+                    <constraint firstItem="i8c-0K-UYM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nxh-nu-wtt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator1" destination="V2E-Bb-3kd" id="quC-14-Chq"/>
+                <outlet property="activityIndicator2" destination="00S-kN-uKk" id="38b-aG-7Fp"/>
+                <outlet property="activityIndicator3" destination="fhI-LM-0BF" id="crE-Bq-Zl0"/>
+                <outlet property="image1" destination="61a-HQ-yTl" id="4Hs-rI-nag"/>
+                <outlet property="image2" destination="JeJ-p1-MIU" id="kpz-IW-bo1"/>
+                <outlet property="image3" destination="i8c-0K-UYM" id="JYs-I4-rZr"/>
+            </connections>
+            <point key="canvasLocation" x="257.60000000000002" y="139.43028485757122"/>
+        </tableViewCell>
+    </objects>
+</document>

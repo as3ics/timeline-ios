@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothic Bold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="AccountHeaderCell" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-logo" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-uh-Qkh">
+                        <rect key="frame" x="0.0" y="8" width="195" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="72" id="dqj-Pz-dgF"/>
+                            <constraint firstAttribute="width" constant="195" id="np0-xF-UPn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Timeline Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-p0-fad">
+                        <rect key="frame" x="16" y="74" width="262.5" height="20"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-qe-noT">
+                        <rect key="frame" x="16" y="101" width="153" height="16"/>
+                        <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CS4-p0-fad" secondAttribute="trailing" constant="5" id="5NV-0O-XZP"/>
+                    <constraint firstItem="CS4-p0-fad" firstAttribute="top" secondItem="iYt-uh-Qkh" secondAttribute="bottom" constant="-6" id="5XI-j1-Jvc"/>
+                    <constraint firstItem="CS4-p0-fad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Ujy-hD-zZP"/>
+                    <constraint firstItem="iYt-uh-Qkh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="ZT6-Yb-e7L"/>
+                    <constraint firstItem="lsR-qe-noT" firstAttribute="top" secondItem="CS4-p0-fad" secondAttribute="bottom" constant="7" id="gSp-aj-1qi"/>
+                    <constraint firstItem="iYt-uh-Qkh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nOw-z0-ulD"/>
+                    <constraint firstItem="lsR-qe-noT" firstAttribute="leading" secondItem="CS4-p0-fad" secondAttribute="leading" id="tHj-Xu-bqi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="typeLabel" destination="lsR-qe-noT" id="jPb-kB-VGf"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="79"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="launch-logo" width="648" height="282"/>
+    </resources>
+</document>

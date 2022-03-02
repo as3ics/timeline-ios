@@ -1,0 +1,6 @@
+framework module Pods_Timeline_Core {
+  umbrella header "Pods-Timeline Core-umbrella.h"
+
+  export *
+  module * { export * }
+}

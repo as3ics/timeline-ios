@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankGothic Bold.ttf">
+            <string>BankGothicBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Timeline_FM_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="110"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shift Totals" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-xl-s9i">
+                                <rect key="frame" x="270" y="5" width="120" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="17"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rJ-Rs-cvd">
+                                <rect key="frame" x="8" y="23" width="69" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="KMc-4z-gmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGo-gN-JIM">
+                                <rect key="frame" x="8" y="5" width="152.5" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="17"/>
+                                <color key="textColor" red="0.058823529409999999" green="0.50588235290000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7h 36m 29s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epN-FL-QSy">
+                                <rect key="frame" x="288" y="23" width="102" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alex's Condo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsn-Su-EhY">
+                                <rect key="frame" x="8" y="43" width="111.5" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34 miles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWo-fb-TK0">
+                                <rect key="frame" x="317.5" y="43" width="72.5" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated at 5:54 PM " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PC4-Tr-1sp">
+                                <rect key="frame" x="130.5" y="92" width="140.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="xNY-Vv-WTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="12"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Loaded" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-rD-Tw7">
+                                <rect key="frame" x="8" y="62.5" width="99" height="18"/>
+                                <fontDescription key="fontDescription" name="BankGothicBold" family="BankGothic" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PC4-Tr-1sp" firstAttribute="centerX" secondItem="ssy-KU-ocm" secondAttribute="centerX" id="4wA-dG-PlK"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="BQU-xl-s9i" secondAttribute="trailing" constant="10" id="5ue-su-azn"/>
+                            <constraint firstItem="BQU-xl-s9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tGo-gN-JIM" secondAttribute="trailing" constant="10" id="APc-U4-ZYW"/>
+                            <constraint firstItem="AWo-fb-TK0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hsn-Su-EhY" secondAttribute="trailing" constant="10" id="BgM-fE-cYU"/>
+                            <constraint firstItem="Hsn-Su-EhY" firstAttribute="height" secondItem="8rJ-Rs-cvd" secondAttribute="height" id="CYp-CH-n4a"/>
+                            <constraint firstItem="epN-FL-QSy" firstAttribute="height" secondItem="8rJ-Rs-cvd" secondAttribute="height" id="DW1-Ay-ngT"/>
+                            <constraint firstItem="tGo-gN-JIM" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="8" id="IUT-EC-buF"/>
+                            <constraint firstItem="8rJ-Rs-cvd" firstAttribute="leading" secondItem="tGo-gN-JIM" secondAttribute="leading" id="QFN-Ij-HzA"/>
+                            <constraint firstItem="AWo-fb-TK0" firstAttribute="centerY" secondItem="Hsn-Su-EhY" secondAttribute="centerY" id="QYm-T0-Fea"/>
+                            <constraint firstItem="hR6-rD-Tw7" firstAttribute="top" secondItem="Hsn-Su-EhY" secondAttribute="bottom" constant="1.5" id="R4r-c9-0PV"/>
+                            <constraint firstItem="Hsn-Su-EhY" firstAttribute="top" secondItem="8rJ-Rs-cvd" secondAttribute="bottom" constant="2" id="RDT-lf-qrY"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="PC4-Tr-1sp" secondAttribute="trailing" constant="10" id="ScC-s6-kgx"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="PC4-Tr-1sp" secondAttribute="bottom" constant="2" id="Z7n-Gq-3Y1"/>
+                            <constraint firstItem="tGo-gN-JIM" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="a0O-4l-6Gc"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hR6-rD-Tw7" secondAttribute="trailing" constant="10" id="a5h-Rh-V2W"/>
+                            <constraint firstItem="PC4-Tr-1sp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="10" id="aLc-Mr-UQi"/>
+                            <constraint firstItem="8rJ-Rs-cvd" firstAttribute="top" secondItem="tGo-gN-JIM" secondAttribute="bottom" id="e6a-aK-qVa"/>
+                            <constraint firstItem="epN-FL-QSy" firstAttribute="centerY" secondItem="8rJ-Rs-cvd" secondAttribute="centerY" id="hhc-pJ-S4E"/>
+                            <constraint firstItem="hR6-rD-Tw7" firstAttribute="height" secondItem="Hsn-Su-EhY" secondAttribute="height" id="k7d-Cg-e3A"/>
+                            <constraint firstItem="epN-FL-QSy" firstAttribute="trailing" secondItem="BQU-xl-s9i" secondAttribute="trailing" id="lvV-Cb-FAN"/>
+                            <constraint firstItem="hR6-rD-Tw7" firstAttribute="leading" secondItem="tGo-gN-JIM" secondAttribute="leading" id="nXF-DU-HtC"/>
+                            <constraint firstItem="AWo-fb-TK0" firstAttribute="trailing" secondItem="epN-FL-QSy" secondAttribute="trailing" id="of9-CV-mAA"/>
+                            <constraint firstItem="Hsn-Su-EhY" firstAttribute="leading" secondItem="8rJ-Rs-cvd" secondAttribute="leading" id="pCS-l9-Mcb"/>
+                            <constraint firstItem="epN-FL-QSy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8rJ-Rs-cvd" secondAttribute="trailing" constant="10" id="qCq-oP-F3A"/>
+                            <constraint firstItem="AWo-fb-TK0" firstAttribute="height" secondItem="Hsn-Su-EhY" secondAttribute="height" id="r7R-EB-eAN"/>
+                            <constraint firstItem="BQU-xl-s9i" firstAttribute="centerY" secondItem="tGo-gN-JIM" secondAttribute="centerY" id="rPI-F4-uzD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="110"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="8rJ-Rs-cvd" id="dxh-15-ued"/>
+                        <outlet property="addressLabel" destination="hR6-rD-Tw7" id="l5D-63-Njv"/>
+                        <outlet property="footerLabel" destination="PC4-Tr-1sp" id="beV-7o-WUj"/>
+                        <outlet property="leftTitle" destination="tGo-gN-JIM" id="KhD-YV-Sg3"/>
+                        <outlet property="locationLabel" destination="Hsn-Su-EhY" id="z7z-Er-aPa"/>
+                        <outlet property="milesLabel" destination="AWo-fb-TK0" id="yZb-X3-mcd"/>
+                        <outlet property="rightTitle" destination="BQU-xl-s9i" id="W1N-tx-Q9k"/>
+                        <outlet property="shiftDurationLabel" destination="epN-FL-QSy" id="knr-wp-Agl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.8" y="107.94602698650675"/>
+        </scene>
+    </scenes>
+</document>

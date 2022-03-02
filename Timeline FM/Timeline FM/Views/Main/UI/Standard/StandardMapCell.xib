@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="300" id="KGk-i7-Jjw" customClass="StandardMapCell" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yic-Eq-d0w" customClass="MapView" customModule="Timeline_FM" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="QVa-La-UMX"/>
+                        </connections>
+                    </mapView>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdI-5A-MBV">
+                        <rect key="frame" x="235" y="164.5" width="80" height="30"/>
+                        <subviews>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pn-z6-EkB">
+                                <rect key="frame" x="39" y="5" width="2" height="20"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="g5R-jI-R1r"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rap-wb-n2W">
+                                <rect key="frame" x="9.5" y="5" width="20" height="20"/>
+                                <state key="normal" title="+" image="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3k-HP-KVT">
+                                <rect key="frame" x="50.5" y="5" width="20" height="20"/>
+                                <state key="normal" title="-" image="minus-blue"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B3k-HP-KVT" firstAttribute="centerY" secondItem="hdI-5A-MBV" secondAttribute="centerY" id="2Rx-zN-J3z"/>
+                            <constraint firstAttribute="height" constant="30" id="4Zq-Kz-r9E"/>
+                            <constraint firstAttribute="trailing" secondItem="B3k-HP-KVT" secondAttribute="trailing" constant="9.5" id="5ho-QE-UQI"/>
+                            <constraint firstItem="B3k-HP-KVT" firstAttribute="top" secondItem="hdI-5A-MBV" secondAttribute="top" constant="5" id="G1r-Jo-9ac"/>
+                            <constraint firstItem="Rap-wb-n2W" firstAttribute="centerY" secondItem="hdI-5A-MBV" secondAttribute="centerY" id="GKF-VW-tS0"/>
+                            <constraint firstAttribute="bottom" secondItem="B3k-HP-KVT" secondAttribute="bottom" constant="5" id="K8A-pJ-uKv"/>
+                            <constraint firstItem="Rap-wb-n2W" firstAttribute="top" secondItem="hdI-5A-MBV" secondAttribute="top" constant="5" id="TNK-fE-azl"/>
+                            <constraint firstAttribute="bottom" secondItem="Rap-wb-n2W" secondAttribute="bottom" constant="5" id="Ubo-on-AYM"/>
+                            <constraint firstItem="8pn-z6-EkB" firstAttribute="leading" secondItem="Rap-wb-n2W" secondAttribute="trailing" constant="9.5" id="cR6-3a-doE"/>
+                            <constraint firstItem="8pn-z6-EkB" firstAttribute="top" secondItem="hdI-5A-MBV" secondAttribute="top" constant="5" id="dt4-57-o3Q"/>
+                            <constraint firstItem="B3k-HP-KVT" firstAttribute="leading" secondItem="8pn-z6-EkB" secondAttribute="trailing" constant="9.5" id="h5Q-Nb-Yrr"/>
+                            <constraint firstAttribute="bottom" secondItem="8pn-z6-EkB" secondAttribute="bottom" constant="5" id="jkh-tU-q4H"/>
+                            <constraint firstItem="8pn-z6-EkB" firstAttribute="centerY" secondItem="hdI-5A-MBV" secondAttribute="centerY" id="jpg-Yu-s11"/>
+                            <constraint firstAttribute="width" constant="80" id="l6Z-Q8-IpD"/>
+                            <constraint firstItem="8pn-z6-EkB" firstAttribute="centerX" secondItem="hdI-5A-MBV" secondAttribute="centerX" id="vOA-7e-e0Y"/>
+                            <constraint firstItem="Rap-wb-n2W" firstAttribute="leading" secondItem="hdI-5A-MBV" secondAttribute="leading" constant="9.5" id="vYK-qp-8pS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="yic-Eq-d0w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1dT-vN-bAN"/>
+                    <constraint firstAttribute="trailing" secondItem="yic-Eq-d0w" secondAttribute="trailing" id="9iP-tk-nao"/>
+                    <constraint firstItem="hdI-5A-MBV" firstAttribute="trailing" secondItem="yic-Eq-d0w" secondAttribute="trailing" constant="-5" id="Dfb-KC-Eqe"/>
+                    <constraint firstItem="yic-Eq-d0w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NMQ-oP-ftE"/>
+                    <constraint firstItem="hdI-5A-MBV" firstAttribute="bottom" secondItem="yic-Eq-d0w" secondAttribute="bottom" constant="-5" id="PPs-g2-WMF"/>
+                    <constraint firstAttribute="bottom" secondItem="yic-Eq-d0w" secondAttribute="bottom" id="fFE-kp-27u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mapView" destination="yic-Eq-d0w" id="gHW-lf-Vup"/>
+                <outlet property="minusButton" destination="B3k-HP-KVT" id="y3y-su-azf"/>
+                <outlet property="plusButton" destination="Rap-wb-n2W" id="diU-AJ-sgL"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="1.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="minus-blue" width="22" height="2"/>
+        <image name="plus" width="22" height="22"/>
+    </resources>
+</document>

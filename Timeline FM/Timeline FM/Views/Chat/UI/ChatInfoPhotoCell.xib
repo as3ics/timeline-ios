@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="KGk-i7-Jjw" customClass="ChatInfoPhotoCell" customModule="Timeline_FM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JmR-SD-Ppj">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="200"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jCH-bw-rTZ">
+                        <rect key="frame" x="210" y="0.0" width="210" height="200"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JmR-SD-Ppj" firstAttribute="height" secondItem="jCH-bw-rTZ" secondAttribute="height" id="6i8-RR-6fv"/>
+                    <constraint firstItem="jCH-bw-rTZ" firstAttribute="leading" secondItem="JmR-SD-Ppj" secondAttribute="trailing" id="Ar3-AW-ksj"/>
+                    <constraint firstItem="JmR-SD-Ppj" firstAttribute="width" secondItem="jCH-bw-rTZ" secondAttribute="width" id="B4r-Vt-Rf9"/>
+                    <constraint firstAttribute="trailing" secondItem="jCH-bw-rTZ" secondAttribute="trailing" id="Ege-Yr-g30"/>
+                    <constraint firstAttribute="bottom" secondItem="JmR-SD-Ppj" secondAttribute="bottom" id="FgP-fc-3vK"/>
+                    <constraint firstItem="JmR-SD-Ppj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aEi-Yf-Edt"/>
+                    <constraint firstItem="JmR-SD-Ppj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aMd-aA-ZHg"/>
+                    <constraint firstAttribute="bottom" secondItem="jCH-bw-rTZ" secondAttribute="bottom" id="gA4-fX-TxS"/>
+                    <constraint firstItem="jCH-bw-rTZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="t5h-Rb-dLL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="image1" destination="JmR-SD-Ppj" id="d8o-z2-v9I"/>
+                <outlet property="image2" destination="jCH-bw-rTZ" id="min-Vx-af1"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="55"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Activities-->
+        <scene sceneID="XrR-tb-cyD">
+            <objects>
+                <viewController storyboardIdentifier="ViewActivities" useStoryboardIdentifierAsRestorationIdentifier="YES" id="peC-rQ-Ns3" userLabel="View Activities" customClass="ViewActivities" customModule="Timeline_FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="Hm8-3l-8tO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jMB-UY-bBJ" customClass="NavWrapper" customModule="Timeline_FM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1w-RZ-npV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="peC-rQ-Ns3" id="rVW-TV-jys"/>
+                                            <outlet property="delegate" destination="peC-rQ-Ns3" id="alf-l6-9an"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="N1w-RZ-npV" secondAttribute="trailing" id="Q38-3r-Wtu"/>
+                                    <constraint firstItem="N1w-RZ-npV" firstAttribute="top" secondItem="jMB-UY-bBJ" secondAttribute="top" id="cj5-aX-w0I"/>
+                                    <constraint firstAttribute="bottom" secondItem="N1w-RZ-npV" secondAttribute="bottom" id="ioD-aR-0K8"/>
+                                    <constraint firstItem="N1w-RZ-npV" firstAttribute="leading" secondItem="jMB-UY-bBJ" secondAttribute="leading" id="rZp-61-M8d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jMB-UY-bBJ" secondAttribute="trailing" id="0yf-bj-nTw"/>
+                            <constraint firstItem="jMB-UY-bBJ" firstAttribute="left" secondItem="Hm8-3l-8tO" secondAttribute="left" id="lhp-3E-9dr"/>
+                            <constraint firstAttribute="bottom" secondItem="jMB-UY-bBJ" secondAttribute="bottom" id="mY9-l1-y02"/>
+                            <constraint firstItem="jMB-UY-bBJ" firstAttribute="top" secondItem="Hm8-3l-8tO" secondAttribute="top" placeholder="YES" id="o29-pk-WJ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eKP-I2-nK6"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activities" id="2NH-nc-Cah"/>
+                    <connections>
+                        <outlet property="tableView" destination="N1w-RZ-npV" id="enB-Yy-t0J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Za-Z8-ZhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="356.67166416791605"/>
+        </scene>
+        <!--View Activity-->
+        <scene sceneID="dqi-Ww-SFS">
+            <objects>
+                <viewController storyboardIdentifier="ViewActivity" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eQd-Jj-Z5V" customClass="ViewActivity" customModule="Timeline_FM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACI-UI-SIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-Fn-Kp3" customClass="NavWrapper" customModule="Timeline_FM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-Lb-OCW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="eQd-Jj-Z5V" id="kqe-K1-3OP"/>
+                                            <outlet property="delegate" destination="eQd-Jj-Z5V" id="6K2-Sb-rpN"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Tll-Lb-OCW" secondAttribute="trailing" id="COM-q3-rwF"/>
+                                    <constraint firstAttribute="top" secondItem="Tll-Lb-OCW" secondAttribute="top" id="M3r-2U-BGO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tll-Lb-OCW" secondAttribute="bottom" id="pb3-W4-Xag"/>
+                                    <constraint firstItem="Tll-Lb-OCW" firstAttribute="leading" secondItem="h2d-Fn-Kp3" secondAttribute="leading" id="z7E-Zs-SdY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h2d-Fn-Kp3" firstAttribute="left" secondItem="ACI-UI-SIQ" secondAttribute="left" id="Jpb-si-TDT"/>
+                            <constraint firstItem="h2d-Fn-Kp3" firstAttribute="top" secondItem="ACI-UI-SIQ" secondAttribute="top" priority="500" placeholder="YES" id="SN8-g9-0fB"/>
+                            <constraint firstAttribute="right" secondItem="h2d-Fn-Kp3" secondAttribute="right" id="dxk-QR-VY3"/>
+                            <constraint firstAttribute="bottom" secondItem="h2d-Fn-Kp3" secondAttribute="bottom" id="g48-jL-7W0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9mc-Nr-KXb"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Tll-Lb-OCW" id="lbd-Av-1Ll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0e-q0-Hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352.8000000000002" y="356.67166416791605"/>
+        </scene>
+    </scenes>
+</document>
